@@ -4,7 +4,7 @@ interface IStars {
   count: number,
 }
 
-export const Stars = ({ count }: IStars) => {
+export const Stars = ({ count = 0 }: IStars) => {
   if (count < 1 || count > 5 || typeof count !== 'number') return;
 
   const stars = [];
